@@ -1,0 +1,15 @@
+ makeLLEproducts-01-00-01 01-Sep-2011 giacomov This package is a wrapper for MKDRM tool for LLE by Nicola Omodei
+ makeLLEproducts-01-00-02 26-Sep-2011 giacomov Added keywords for Xspec and GBMtoolkit. Improved the handling of the TCut, so that it is computed once during the generation of the RSP and it is then passed for the PHA2 and FT1 files
+ makeLLEproducts-01-00-03 27-Sep-2011 giacomov Added the capability to disentangle Transient and LLE data (the -notransient option)
+ makeLLEproducts-01-00-04 29-Sep-2011 omodei Added prefix parameter and mode parameter
+ makeLLEproducts-01-00-05 07-Nov-2011 omodei Minor bug fixed
+ makeLLEproducts-01-01-00 02-Feb-2012 omodei Fixing file definition for the LLE datarelease
+ makeLLEproducts-01-02-00 17-Feb-2012 omodei Updated keywords for LLE data release
+ makeLLEproducts-01-03-00 17-Apr-2012 omodei Automatic Tagging of GRBAnalysis packages
+ makeLLEproducts-01-04-00 09-May-2012 omodei Automatic Tagging of GRBAnalysis packages
+ makeLLEproducts-01-05-00 02-Jul-2012 omodei Automatic Tagging of GRBAnalysis packages
+ makeLLEproducts-01-05-01 03-Jul-2012 omodei Automatic Tagging of GRBAnalysis packages
+ makeLLEproducts-01-06-00 27-Nov-2012 omodei Automatic Tagging of GRBAnalysis packages
+ makeLLEproducts-01-06-01 12-Dec-2012 omodei Automatic Tagging of GRBAnalysis packages
+ makeLLEproducts-01-06-02 16-Dec-2013 omodei Automatic Tagging of GRBAnalysis packages
+ makeLLEproducts-01-06-03 27-Aug-2014 omodei Automatic Tagging of GRBAnalysis packages

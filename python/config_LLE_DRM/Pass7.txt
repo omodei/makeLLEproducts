@@ -1,0 +1,73 @@
+
+##################################################
+# CONFIGURATION FILE FOR mkdrm.py
+# Lines containing a # are skipped
+##################################################
+
+# run in batch mode?
+SETBATCH := 1
+
+# Use the number of generated events
+NGEN        := 10000
+
+# DEFAULT PARAMETERS FOR ENERGY BINNING:
+NMC        := 50     := MC
+NREC       := 50     := RECON
+
+
+ENERGYVAR  := EvtEnergyCorr
+
+##################################################
+# HERE ARE SOME TIPICAL CUTS
+
+# DETNAME : Name of the detector. This is the legend in the rmfit PHA2 file.
+
+# DETNAM      := LAT
+# MYCUT:=FswGamState==0 && TkrNumTracks>0
+	          
+# DETNAM     := LowE
+# MYCUT := FswGamState==0 && CalEnergyRaw<5 && TkrNumHits<=20
+
+# DETNAM     := Transient_thick
+# MYCUT := FswGamState==0 && CTBBestEnergyProb>0 && CTBCORE>0 && CTBBestEnergy>10 && CTBBestEnergyRatio<5 && CTBClassLevel>0 && Tkr1FirstLayer <= 5
+
+# DETNAM     := VTX
+# MYCUT  :=FswGamState==0&&TkrNumTracks>0&&(GltEngine==6 || GltEngine==7)&&EvtEnergyCorr>0 && (CalEnergyRaw>10 || VtxAngle>0)
+
+#DETNAM     := LLE_thick_ROI20
+#MYCUT := FswGamState==0 && TkrNumTracks>0 && (GltEngine==6 || GltEngine==7) && EvtEnergyCorr > 0 && Tkr1FirstLayer <= 5
+
+#DETNAM     := LLE_thin_PSF
+#MYCUT := FswGamState==0 && TkrNumTracks>0 && (GltEngine==6 || GltEngine==7) && EvtEnergyCorr > 0 && Tkr1FirstLayer > 5
+
+#DETNAM     := LLE_theta_lt80_roi40
+#MYCUT := FswGamState==0 && TkrNumTracks>0 && (GltEngine==6 || GltEngine==7) && EvtEnergyCorr > 0 && FT1Theta<=80
+
+############################################################################
+
+#DETNAM     := LLE_newROI21
+#MYCUT := FswGamState==0 && TkrNumTracks>0 && (GltEngine==6 || GltEngine==7) && EvtEnergyCorr > 0 && FT1Theta<=80
+
+#DETNAM     := LLE_PSF
+#MYCUT := FswGamState==0 && TkrNumTracks>0 && (GltEngine==6 || GltEngine==7) && EvtEnergyCorr > 0 && FT1Theta<=80
+
+#DETNAM     := LLE_MC_ROI20_p1
+#MYCUT := FswGamState==0 && TkrNumTracks>0 && (GltEngine==6 || GltEngine==7) && EvtEnergyCorr > 0 && FT1Theta<=80
+
+DETNAM     := LLE
+MYCUT := FswGamState==0 && TkrNumTracks>0 && (GltEngine==6 || GltEngine==7) && EvtEnergyCorr > 0
+
+#DETNAM     := LLE_ROIE_T180_TH70_Z100_SSD
+#MYCUT := FswGamState==0 && TkrNumTracks>0 && (GltEngine==6 || GltEngine==7) && EvtEnergyCorr > 0 && FT1Theta<=70 && Tkr1SSDVeto>0
+
+# DETNAM     := LLE_ROI15_T180_TH70_Z100_TRANSIENT
+# MYCUT      := FswGamState==0 && CTBBestEnergyProb>0 && CTBCORE>0 && CTBBestEnergy>10 && CTBBestEnergyRatio<5 && CTBClassLevel>0
+
+##################################################
+# INPUT SIMULATION FILE FOR DRM GENERATION:
+
+EMIN        := 10
+EMAX        := 100000
+INDEX       := -1
+
+###################

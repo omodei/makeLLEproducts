@@ -1,0 +1,667 @@
+SETBATCH 1.0
+MAKEDRM 1.0
+MAKEPHA2 1.0
+useAllGamma 0.0
+useNgen 1.0
+NGEN 10000.0
+FLUX 16.0
+ZENITHTHETA 180.0
+NMC 50.0
+NREC 50.0
+ENERGYVAR EvtEnergyCorr
+DETNAM LLE_PSF
+MYCUT ObfGamState==0 && TkrNumTracks>0 && (GltEngine==6 || GltEngine==7) && EvtEnergyCorr > 0
+EMIN 10.0
+EMAX 100000.0
+INDEX -1.0
+basename root://glast-rdr//glast/mc/ServiceChallenge/GRB100724029/merit/GRB100724029-%06d-merit.root
+NAllGammaFiles 100.0
+FirstFile 1200.0
+TRIGTIME 301624926.0
+BEFORE 100.0
+AFTER 300.0
+DT 1.024
+RA 120.112
+DEC 76.7864
+RADIUS_ROI -3.0
+DATAFILESBASE ~omodei/mySpace/DATA/MERIT/GRB100724029.root
+NDATAFILES 1.0
+ ################################################## 
+ mkdrm.py - written by nicola.omodei@gmail.com
+  CONFIGURATION FILE    ......: <open file 'config/GRB100724029.txt', mode 'r' at 0xb7bf84f0> 
+ **************************************************
+ #                  CONFIGURATION                 # 
+               INDEX:	-1.0
+            MAKEPHA2:	1.0
+                EMAX:	100000.0
+            basename:	root://glast-rdr//glast/mc/ServiceChallenge/GRB100724029/merit/GRB100724029-%06d-merit.root
+           FirstFile:	1200.0
+                  DT:	1.024
+                 DEC:	76.7864
+            TRIGTIME:	301624926.0
+           ENERGYVAR:	EvtEnergyCorr
+            SETBATCH:	1.0
+             MAKEDRM:	1.0
+       DATAFILESBASE:	~omodei/mySpace/DATA/MERIT/GRB100724029.root
+          NDATAFILES:	1.0
+                EMIN:	10.0
+                FLUX:	16.0
+         useAllGamma:	0.0
+          RADIUS_ROI:	-3.0
+                  RA:	120.112
+                NREC:	50.0
+                NGEN:	10000.0
+      NAllGammaFiles:	100.0
+         ZENITHTHETA:	180.0
+              BEFORE:	100.0
+             useNgen:	1.0
+               MYCUT:	ObfGamState==0 && TkrNumTracks>0 && (GltEngine==6 || GltEngine==7) && EvtEnergyCorr > 0
+              DETNAM:	LLE_PSF
+                 NMC:	50.0
+               AFTER:	300.0
+################################################## 
+ CONFIGURATION SUCCESSFULLY READ 
+##################################################
+/afs/slac/g/glast/ground/bin/datacat find \--filter '(301625226 <= nMetStart && nMetStop <= 301625226) || (nMetStart <= 301625226 && 301625226 <= nMetStop) || (nMetStart <= 301625226 && 301625226 <= nMetStop)' \--sort nMetStart \--group MERIT \--site SLAC_XROOT /Data/Flight/Level1/LPA/
+Tstart = 301624626.0, Tstop=301625226.0, Nbin=600
+getting FT2 fle...
+--> file FT2: FT2/FT2_ft2_301621026_301628826.fits
+/afs/slac/g/glast/ground/bin/datacat find \--group merit \--site SLAC_XROOT /MC-Tasks/ServiceChallenge/GRBSimulator-Pass6v3/GRB100724029/runs
+Added 500 valid MC files 
+theta= (GRB) 48.7613639326
+Energy interval (log10) : 1.0, 5.0
+----------------------------------------------------------------------------
+ Final Selection......: ((ObfGamState==0 && TkrNumTracks>0 && (GltEngine==6 || GltEngine==7) && EvtEnergyCorr > 0) && (FT1Theta<=180.0)) && (FT1ZenithTheta<105.0) && (((cos(FT1Dec*0.0174533)*(FT1Ra - (120.112)))^2+(FT1Dec- (76.7864))^2)< (12.0)^2 ) 
+----------------------------------------------------------------------------
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018904-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018845-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018987-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019113-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018856-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018926-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019116-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019152-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018943-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019019-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018857-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018822-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019111-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019082-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019141-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018948-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019067-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019037-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018910-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018790-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018726-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018870-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018994-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018931-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018923-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019088-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019181-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018733-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018827-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019074-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019096-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019027-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019062-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018913-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018759-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019125-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018878-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018953-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018872-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018844-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018791-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018706-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019095-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018722-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018887-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018800-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018775-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018927-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018724-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019155-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019101-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018897-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019033-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018794-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019099-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019023-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019103-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019063-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018868-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019142-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018957-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018788-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019022-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019015-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019188-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018849-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019156-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018837-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018792-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018712-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018985-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018871-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018997-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018903-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019106-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019038-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018761-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018716-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019013-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018999-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019195-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019058-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019172-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018959-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019132-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018739-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018715-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018718-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018982-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018751-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018976-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018821-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019109-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019068-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018873-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019157-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019080-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018970-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019090-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019049-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019073-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019028-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018811-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018805-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018914-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018779-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019169-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019140-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018719-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018848-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018710-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018720-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019055-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018974-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019026-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019016-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019153-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018797-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018785-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018771-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018803-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018787-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018834-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018960-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018966-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019147-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019135-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019163-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019117-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018881-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018954-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018816-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019078-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018810-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019093-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019069-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019034-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018799-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019081-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019161-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018977-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018778-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018989-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019126-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018941-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019114-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018961-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018830-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018973-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019131-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018717-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018753-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018729-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019075-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019040-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018892-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019092-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019094-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018854-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019100-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018839-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018964-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019194-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018940-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019134-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018784-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018915-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018980-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018772-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018956-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018703-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018902-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018756-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018886-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018734-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018933-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019105-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019060-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019129-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019151-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019079-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019127-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018998-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018781-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019104-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018951-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019168-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018807-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018885-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019145-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019180-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018767-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018968-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019166-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019154-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019118-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018867-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018891-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018750-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018708-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018829-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018824-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018993-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018900-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019124-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018766-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018991-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018866-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018723-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019020-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019162-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019138-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019061-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018884-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018876-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019122-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019041-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019086-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019119-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019053-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019173-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018762-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018906-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018969-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018945-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019136-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019071-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019089-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019097-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019148-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019160-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018776-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018907-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019005-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018802-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018967-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018890-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018769-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019044-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019085-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019146-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019029-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018939-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018813-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018877-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018711-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018928-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018947-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019031-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019087-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018770-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018831-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018782-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018713-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018820-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018789-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018801-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018817-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019112-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019191-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019128-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018936-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018842-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018949-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018992-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019017-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018838-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019175-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018921-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019002-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019059-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019047-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018721-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019001-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018944-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018731-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018898-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018783-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018746-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018795-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018924-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019012-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019179-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019198-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019046-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018983-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019120-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018965-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018920-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018916-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018812-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019149-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019187-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018705-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018741-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018922-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018880-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018851-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019193-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018895-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019171-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018860-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019007-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018725-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019183-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019084-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019050-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018917-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018908-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019056-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018852-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018728-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019006-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018732-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018815-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018774-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018793-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018934-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018901-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018755-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018743-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018942-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018808-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019123-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019102-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018950-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018962-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018990-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019186-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019174-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019032-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019072-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018846-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019159-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019115-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019192-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018978-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019184-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019035-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018986-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018700-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018707-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019018-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018833-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019133-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019000-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018832-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018737-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018896-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018796-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019108-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018865-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019185-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018863-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018836-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018786-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018875-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018862-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018869-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019043-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019048-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018859-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018748-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019176-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018889-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018804-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019091-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018704-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019144-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018825-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019066-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019177-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018971-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019011-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019004-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018864-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018888-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018823-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018909-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019052-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019110-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019189-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019178-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018742-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018958-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019057-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019010-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018858-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018843-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019182-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018819-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018806-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019150-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018749-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018930-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018826-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019107-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018905-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018841-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018893-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018809-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018984-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019190-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018996-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018752-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018963-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018861-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019121-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018740-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019165-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019030-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019143-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019167-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019065-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018760-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018764-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018975-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019025-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018747-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019042-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019054-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018730-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018946-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019170-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019098-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019003-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019197-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018840-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018714-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018855-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019036-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019196-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018745-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018757-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019039-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019008-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019014-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018918-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018798-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018835-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019076-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018935-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019064-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018818-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018883-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018932-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019077-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018736-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018938-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018882-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018738-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018879-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019083-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018702-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018773-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018709-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018955-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018979-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019164-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018701-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018853-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018758-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018744-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018874-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018972-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019024-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018814-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018754-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019137-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018850-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018828-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018937-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018981-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019009-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018768-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018919-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018912-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019139-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019070-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018995-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018777-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018735-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018765-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018925-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018911-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018780-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018763-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018847-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018988-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019158-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018899-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018952-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019199-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019051-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019021-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019130-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018727-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018894-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-019045-merit.root 
+----> root://glast-rdr//glast/mc/ServiceChallenge/GRBSimulator-Pass6v3/merit/GRB100724029-018929-merit.root 
+***********************************************
+Number of generated events per file: 10000
+Number of generated events in the jobinfo: 9957
+***********************************************
+MC File : Tmin: 1.992, Tmax: 102.426, duration: 100.434 x(500)
+DRM TIME: TMIN: 10.000, TMAX: 102.426, DURATION: 92.426 x(500), NSCALE=0.920
+...defining the histograms...
+699980.0 418089.0
+
+    ##################################################    
+    #      MAKE THE DETECTOR RESPONSE MATRIX
+    ##################################################    
+    
+INDEX =  -1.0
+WILL USE THE NUMBER OF GENERATED EVENTS (10000)
+ NUMBER OF MC ENERGY BINS: 50 FROM 10.0 TO 100000.0 MEV
+ NUMBER OF RECONSTRUCTED ENERGY BINS: 50 FROM 10.0 TO 100000.0 MEV
+**********NOW GENERATING FITS FILE...
+Filename: (No file associated with this HDUList)
+No.    Name         Type      Cards   Dimensions   Format
+0    PRIMARY     PrimaryHDU      13  ()            
+1    MATRIX      BinTableHDU     40  50R x 6C      ['E', 'E', 'I', 'PI(1)', 'PI(1)', 'PE(50)']
+2    EBOUNDS     BinTableHDU     30  50R x 3C      ['I', '1E', '1E']
+Overwrite existing file 'output_ez/GRB100724029/LATDRM_LLE_PSF_10.00_100.00_ROI12_Z105_TH180.rsp'.
+Done!
+saving the histograms in the file: output_ez/GRB100724029/DRM_HISTOGRAMS_LLE_PSF_10.00_100.00_ROI12_Z105_TH180.root
+##################################################
+           MAKING THE PHA2 FILE (output_ez/GRB100724029/LLE_PSF_10.00_100.00_ROI12_Z105_TH180)
+##################################################
+Number of GRB files...: 1
+FT2 file:.............:  FT2/FT2_ft2_301621026_301628826.fits Number of energy bins.: 50, from 10.0 to 100000.0 MeV
+Number of time bins...: 600, from 301624626.0 to 301625226.0 s  
+(Ra,Dec)..............: (120.112,76.7864)
+Cut on Zenith.........: 105.0 
+ROI around the Source.: 12.0 
+Trigger Time..........: 301624926.0 
+ + OFFSET   ..........: 10.0 
+ + DURATION ..........: 100.0 
+Energy Variable.......: EvtEnergyCorr 
+--------------------------------------------------
+ Selection:...........: (ObfGamState==0 && TkrNumTracks>0 && (GltEngine==6 || GltEngine==7) && EvtEnergyCorr > 0) && (FT1Theta<=180.0) 
+--------------------------------------------------
+ Final Selection......: ((ObfGamState==0 && TkrNumTracks>0 && (GltEngine==6 || GltEngine==7) && EvtEnergyCorr > 0) && (FT1Theta<=180.0)) && (EvtElapsedTime > 301624626.0 && EvtElapsedTime < 301625226.0) && (FT1ZenithTheta < 105.0) && (((cos(FT1Dec*0.01745)*(FT1Ra - (120.112)))^2+(FT1Dec- (76.7864))^2)< (12.0)^2 ) 
+... drawing the LC...
+... opening the FT2 file ...
+Filename: FT2/FT2_ft2_301621026_301628826.fits
+No.    Name         Type      Cards   Dimensions   Format
+0    PRIMARY     PrimaryHDU      28  ()            uint8
+1    SC_DATA     BinTableHDU    141  7775R x 27C   [D, D, 3E, E, E, D, E, E, E, E, E, L, E, E, E, E, E, E, E, J, B, B, D, D, D, D, D]
+... drawing the theta histogram ...
+... drawing the pha2 histogram ...
+... drawing the ra-dec histogram ...
+... drawing the pha2 histogram ...
+...Now Saving the fits file...
+Creating PHA2 file with:  FT2/FT2_ft2_301621026_301628826.fits LLE_PSF_10.00_100.00_ROI12_Z105_TH180 output_ez/GRB100724029 301624926.0 301624626.0 301625226.0 0
+Filename: FT2/FT2_ft2_301621026_301628826.fits
+No.    Name         Type      Cards   Dimensions   Format
+0    PRIMARY     PrimaryHDU      28  ()            uint8
+1    SC_DATA     BinTableHDU    141  7775R x 27C   [D, D, 3E, E, E, D, E, E, E, E, E, L, E, E, E, E, E, E, E, J, B, B, D, D, D, D, D]
+name:
+     ['START', 'STOP', 'SC_POSITION', 'LAT_GEO', 'LON_GEO', 'RAD_GEO', 'RA_ZENITH', 'DEC_ZENITH', 'B_MCILWAIN', 'L_MCILWAIN', 'GEOMAG_LAT', 'IN_SAA', 'RA_SCZ', 'DEC_SCZ', 'RA_SCX', 'DEC_SCX', 'RA_NPOLE', 'DEC_NPOLE', 'ROCK_ANGLE', 'LAT_MODE', 'LAT_CONFIG', 'DATA_QUAL', 'LIVETIME', 'QSJ_1', 'QSJ_2', 'QSJ_3', 'QSJ_4']
+format:
+     ['D', 'D', '3E', 'E', 'E', 'D', 'E', 'E', 'E', 'E', 'E', 'L', 'E', 'E', 'E', 'E', 'E', 'E', 'E', 'J', 'B', 'B', 'D', 'D', 'D', 'D', 'D']
+unit:
+     ['s', 's', 'm', 'deg', 'deg', 'm', 'deg', 'deg', 'Gauss', 'Earth_Radii', 'deg', '', 'deg', 'deg', 'deg', 'deg', 'deg', 'deg', 'deg', '', '', '', 's', '', '', '', '']
+null:
+     ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
+bscale:
+     ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
+bzero:
+     ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
+disp:
+     ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
+start:
+     ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
+dim:
+     ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
+nt=600,ne=50
+Now:  2011-08-31T12:41:18.0000
+MET MIN:    301624626.0  =>  2010-07-24T00:37:4.0000
+MET MAX:    301625226.0  =>  2010-07-24T00:47:4.0000
+TRIG TIME:  301624926.0  =>  2010-07-24T00:42:4.0000
+Filename: (No file associated with this HDUList)
+No.    Name         Type      Cards   Dimensions   Format
+0    PRIMARY     PrimaryHDU      14  ()            
+1    SPECTRUM    BinTableHDU     57  600R x 5C     ['D', 'D', '1I', '50J', '1E']
+2    EBOUNDS     BinTableHDU     31  50R x 3C      ['I', '1E', '1E']
+3    GTI         BinTableHDU     29  1R x 2C       ['D', 'D']
+Overwrite existing file 'output_ez/GRB100724029/pha2_LLE_PSF_10.00_100.00_ROI12_Z105_TH180.pha'.
+Done!
+...Now Saving the ROOT file...
+Done!
